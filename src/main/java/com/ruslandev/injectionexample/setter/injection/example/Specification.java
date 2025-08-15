@@ -1,4 +1,4 @@
-package com.ruslandev.injectionexample.constructor.injection.example;
+package com.ruslandev.injectionexample.setter.injection.example;
 
 public class Specification {
     private String make;

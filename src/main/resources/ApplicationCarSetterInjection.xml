@@ -6,14 +6,13 @@
 
     <!-- bean definitions here -->
 
-    <bean id="specification" class="com.ruslandev.injectionexample.constructor.injection.example.Specification">
+    <bean id="carSpecification" class="com.ruslandev.injectionexample.setter.injection.example.Specification">
         <property name="make" value="Mercedes"/>
         <property name="model" value="E220"/>
     </bean>
 
-    <bean id="myCar" class="com.ruslandev.injectionexample.constructor.injection.example.Car">
-        <constructor-arg ref="specification"/>
-
+    <bean id="myCar" class="com.ruslandev.injectionexample.setter.injection.example.Car">
+        <property name="specification" ref="carSpecification"/>
     </bean>
 
 </beans>
